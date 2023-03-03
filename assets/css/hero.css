@@ -139,6 +139,7 @@
   position: fixed !important;
   right: 0;
   top: 130px;
+  z-index: 99;
 }
 .hero .help a,
 .signin .help a {
