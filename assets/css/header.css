@@ -1,0 +1,116 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  z-index: 997;
+  padding: 15px 0;
+  top: 0px;
+}
+#header.header-scrolled {
+  top: 0;
+}
+
+/**
+* Appointment Button *
+*/
+.appointment-btn {
+  margin-left: 25px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+  display: inline-block;
+}
+.appointment-btn:hover {
+  background: var(--color-hover);
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .appointment-btn {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 8px;
+}
+.navbar li {
+  position: relative;
+}
+.navbar > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 0px 0px 5px 0px;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+}
+.navbar ul li i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #334155;
+  white-space: nowrap;
+  transition: 0.3s;
+  padding: 5px 2px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  background-color: #ef4444;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar li:hover a::before,
+.navbar .active::before {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #2c4964;
+  font-size: 28px;
+  transition: 0.5s;
+  border: none;
+  padding: 0;
+}

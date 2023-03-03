@@ -1,0 +1,42 @@
+.about {
+  padding: 25px 0;
+}
+.about .cards {
+}
+.about .left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .left-side img {
+  width: 100%;
+}
+.about .cards .card {
+  display: flex;
+  gap: 16px;
+  transition: 0.3s;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  margin: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 16px 32px rgb(0 0 0/10%);
+  border-radius: 16px;
+  z-index: 9;
+}
+.about .cards .card:hover {
+  box-shadow: rgb(0 0 0/20%) 0 16px 32px;
+}
+.about .cards .icon {
+  display: flex;
+  background: #dc2626;
+  box-shadow: 0 8px 20px rgb(229 62 62 / 40%), inset -10px -10px 16px #bb2020, inset 10px 10px 26px #fd2c2c;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 0.35rem;
+}
+@media (max-width: 767px) {
+  .about .left-side {
+    display: none;
+  }
+}

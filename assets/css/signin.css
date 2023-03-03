@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Signin
+--------------------------------------------------------------*/
+.signin .image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.signin .image img {
+  width: 100%;
+}
+.signin .php-email-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: transparent;
+}
+.signin .php-email-form .form-group {
+  padding-bottom: 10px;
+}
+.signin .php-email-form input {
+  border-radius: 0.3rem;
+  box-shadow: none;
+  font-size: 14px;
+  height: 44px;
+  direction: ltr;
+}
+.signin .php-email-form button[type="submit"] {
+  background: #cc1919;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 2rem;
+}
+.signin .php-email-form button[type="submit"]:hover {
+  background: #e31c1c;
+}

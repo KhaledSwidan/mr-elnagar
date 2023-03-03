@@ -1,0 +1,37 @@
+.footer-nav-box a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--bgColor-opacity-85);
+  color: #c0c0c0;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.footer-nav-box a:hover {
+  background: var(--main-color);
+  color: #fff;
+  text-decoration: none;
+}
+.footer-nav {
+  background-color: #faa3a3;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+.footer-nav-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+}
+@media (max-width: 576px) {
+  .footer-nav {
+    display: block;
+  }
+}
