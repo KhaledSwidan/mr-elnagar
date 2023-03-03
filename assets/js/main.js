@@ -63,25 +63,6 @@
     selector: ".glightbox",
   });
 
-  /**
-   * Change Navbar Background Color on Scroll
-   */
-  function changeBg() {
-    let navbar = document.getElementById("navbar");
-    let header = document.getElementById("header");
-    let scrollValue = window.scrollY;
-    if (scrollValue < 250) {
-      header.classList.remove("headerBgMain");
-      header.classList.add("headerBgWhite");
-      navbar.classList.remove("navLinkDark");
-    } else {
-      header.classList.remove("headerBgWhite");
-      header.classList.add("headerBgMain");
-      navbar.classList.add("navLinkDark");
-    }
-  }
-  window.addEventListener("scroll", changeBg);
-
   // Navbar links active state on scroll;
   let navbarlinks = select("#navbar .scrollto", true);
   const navbarlinksActive = () => {
