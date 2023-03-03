@@ -1,0 +1,56 @@
+.feautures {
+  padding: 25px 0;
+}
+.feautures .ftcard {
+  display: flex;
+  gap: 16px;
+  transition: all 0.3s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 10px;
+  margin: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 0px 5px rgb(0 0 0 / 10%);
+  border: none;
+  border-radius: 0.7rem;
+  z-index: 9;
+  min-height: 280px;
+}
+.feautures .ftcard:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgb(0 0 0 / 20%) 0 0px 8px;
+}
+.feautures .ftcard i {
+  color: #dc2626;
+  font-size: 32px;
+}
+.feautures .ftcard h3 {
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+}
+.feautures .ftcard h3::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #dc2626;
+  right: 0;
+  bottom: -5px;
+  transition: all 0.3s ease-in-out;
+}
+.feautures .ftcard:hover h3::after {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.feautures p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #94a3b8;
+}
+@media (max-width: 767px) {
+  .feautures .ftcard {
+    min-height: fit-content;
+  }
+}

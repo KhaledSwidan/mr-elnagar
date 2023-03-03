@@ -1,0 +1,71 @@
+.courses {
+  padding: 25px 0;
+}
+.courses .card {
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 5%), 0 0 5px rgb(0 0 0 / 5%);
+  border: 1px solid #dddddd;
+  transition: 0.3s;
+  border-radius: .4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+.courses .card:hover {
+  box-shadow: 0 16px 32px rgb(0 0 0/5%), 0 0 5px rgb(0 0 0/10%);
+  transition: all 0.3s ease-in-out;
+}
+.courses .title h3 {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px 0;
+  transition: all 0.3s ease-in-out;
+}
+.courses .title a:hover h3 {
+  color: #ef4444;
+  transition: all 0.3s ease-in-out;
+}
+.courses .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #a88e8e;
+}
+.courses .icons i {
+  color: #5e5e5e;
+  font-size: 18px;
+}
+.courses .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgb(0 0 0 / 50%);
+  border-radius: 12px;
+}
+.courses .overlay .icon {
+  color: #fff;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.courses .overlay .icon i {
+  font-size: 48px;
+}
+.courses .img:hover .overlay {
+  opacity: 1;
+}
+.courses .image {
+  border-radius: 0.2rem;
+}
